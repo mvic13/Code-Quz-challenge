@@ -4,12 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="sylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href=".assets/css/rest.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Code Quiz</title>
+    <a class="highscores" href="./scores.html" target="_blank">View High Scores</a>
 </head>
+
 <body>
-    <a href="./scores.html" target="_blank">View High Scores</a>
-    <Script src="./assets/js/questions.js"></Script>
-    <script src="./assets/js/logic.js"></script>
+
+
+    <!--This will be on the top of my screen to show highscores and the timer.-->
+    <header> 
+    <h4 id="timer">Time:</h4> 
+    </header>
+
+
+    <!--This will be the card that has the quiz info and start button  -->
+<div class="StartCard">
+    <h1>Code Quiz</h1>
+    <p>The following quiz is a timed quiz. If you answer incorrectly 10 sec will be taken off of your time.</p>
+    <Button class="Startbtn">Start Quiz</Button>
+</div>
+
+<div id ="questionContainer">
+    <h4 id="askingQuestion">Inside which HTML element do we put the JavaScript?</h4>
+    <ul>
+        <li><button id="js"> &lt;js&gt; </button></li>
+        <li><button id="javascript"> &lt;javascript&gt;</button></li>
+        <li><button id="script">&lt;script&gt;</button></li>
+        <li><button id="scripting">&lt;scripting&gt;</button></li>
+    </ul>
+</div>
+<ul id="choices"></ul>
+
+
+<Script src="./assets/js/questions.js"></Script>
+<script src="./assets/js/logic.js"></script>
+
+
 </body>
 </html>
